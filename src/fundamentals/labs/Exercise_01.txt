@@ -22,3 +22,63 @@ Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
        /Users/cadenmackenzie/Documents/CodingNomads
 
+1.  Users-MacBook-Pro:~ andy$ ls -al
+    total 80
+    drwxr-xr-x+ 21 andy  staff    672 22 Aug 20:45 .
+    drwxr-xr-x   6 root  admin    192 22 Aug 18:08 ..
+    -r--------   1 andy  staff      7 20 Aug 22:29 .CFUserTextEncoding
+    -rw-r--r--@  1 andy  staff  10244 22 Aug 19:33 .DS_Store
+    drwx------  20 andy  staff    640 22 Aug 19:37 .Trash
+    drwxr-xr-x   2 andy  staff     64 20 Aug 20:22 .android
+    drwxr-xr-x  14 andy  staff    448 14 Aug 16:41 .atom
+    -rw-------   1 andy  staff   1255 22 Aug 20:46 .bash_history
+    drwx------   6 andy  staff    192 22 Aug 19:47 .bash_sessions
+    -rw-r--r--   1 andy  staff    149 20 Aug 20:35 .gitconfig
+    drwxr-xr-x   3 andy  staff     96 20 Aug 20:26 .oracle_jre_usage
+    -rw-------   1 andy  staff  12495 22 Aug 20:45 .viminfo
+    drwx------   4 andy  staff    128  9 Aug 19:03 Applications
+    drwx------+  5 andy  staff    160 22 Aug 20:14 Desktop
+    drwx------+  7 andy  staff    224 20 Aug 20:19 Documents
+    drwx------+  9 andy  staff    288 22 Aug 19:37 Downloads
+    drwx------@ 58 andy  staff   1856 22 Aug 18:08 Library
+    drwx------+  3 andy  staff     96 28 Jul 17:14 Movies
+    drwx------+  4 andy  staff    128  9 Aug 19:46 Music
+    drwx------+  5 andy  staff    160 10 Aug 21:07 Pictures
+    drwxr-xr-x+  5 andy  staff    160 28 Jul 17:14 Public
+    Users-MacBook-Pro:~ andy$ cd Documents/
+    Users-MacBook-Pro:Documents andy$ cd codingnomads/
+
+2.  Users-MacBook-Pro:codingnomads andy$ mkdir Terminal_testing
+
+
+3.  Users-MacBook-Pro:codingnomads andy$ cd Terminal_testing/
+a.  Users-MacBook-Pro:Terminal_testing andy$ touch file1.txt
+    Users-MacBook-Pro:Terminal_testing andy$ touch file2.txt
+    Users-MacBook-Pro:Terminal_testing andy$ touch file3.txt
+b.  Users-MacBook-Pro:Terminal_testing andy$ pwd
+    /Users/user/Documents/codingnomads/Terminal_testing
+c.  Users-MacBook-Pro:Terminal_testing andy$ ls -al
+    total 0
+    drwxr-xr-x  5 andy  staff  160 22 Aug 20:50 .
+    drwxr-xr-x  5 andy  staff  160 22 Aug 20:49 ..
+    -rw-r--r--  1 andy  staff    0 22 Aug 20:50 file1.txt
+    -rw-r--r--  1 andy  staff    0 22 Aug 20:50 file2.txt
+    -rw-r--r--  1 andy  staff    0 22 Aug 20:50 file3.txt
+
+5.  Users-MacBook-Pro:Terminal_testing andy$ mkdir new_folder
+
+6.  Users-MacBook-Pro:Terminal_testing andy$ cp file1.txt new_folder/
+
+7.  Users-MacBook-Pro:Terminal_testing andy$ mv file2.txt new_folder/
+
+8.
+a.  Users-MacBook-Pro:Terminal_testing andy$ rm file3.txt
+b.  Users-MacBook-Pro:Terminal_testing andy$ rm -r new_folder
+
+9.
+a.  Users-MacBook-Pro:Terminal_testing andy$ vim file1.txt
+b.  Users-MacBook-Pro:Terminal_testing andy$ cat file1.txt
+    This text has changed!
+c.  Users-MacBook-Pro:Terminal_testing andy$ grep "text" file1.txt
+    This text has changed!
+
