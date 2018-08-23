@@ -2,36 +2,62 @@ Answer the following questions:
 
 1.) Using the command line, how do you:
     a. change directories?
+        - cd <new directory>
     b. list the contents of a folder?
+        - ls -al
     c. print the path of the current directory?
+        - pwd
     d. move a file from one location to the another?
+        - mv <file> <new location>
     e. copy a file from one location to another?
+        - cp <file> <new location>
     f. create a file?
+        - touch <filename>
     g. create a folder?
+        - mkdir <folder name>
     h. delete a file?
+        - rm <filename>
     i. delete a folder?
+        - rm -r <folder name>
     j. print the contents of a file?
+        - cat <filename>
     k. edit the contents of a file?
+        - vim <filename>
 
 2.) Why do we use git and Github?
+    - We use git in order to keep track of changes to a directory locally.
+      By committing changes to the git repository, we can log who made what change and when.
+      Github allows us to do this on a server so that several different people can access the repository
+      and make changes remotely.
 
 3.) What is the general flow of git?
-
+    - After making your changes you would add your files using the "git add <filename>" command.
+      You  would then commit these changes using "git commit -m <comment>"
+      You would then push these changes using "git push"
+      
 4.) What is the purpose of adding a remote to a local git repository?
+    - This allows you to push changes from your local git repository to a remote repository elsewhere.
 
 5.) How do you print a message to the console?
+    System.out.print("a message");
 
 6.) Where does a program begin its execution?
+    - Inside public static void main(String[] args) { }
 
 7.) What is a code block and how do you create one?
+    -  A code block is anything that is contained within: {}
 
 8.) What is the idea of variable scope?
+    - Variables declared within a code block cannot be used outside of this code block.
 
 9.) What are semicolons used for?
+    - Semicolons are used to signify the end of a statement
 
 10.) What are lines of code indented? When should a line be indented?
+    - lines of code are indented in order to improve readability. Lines should be indented when inside a code block.
 
 11.) What does a .java file need to be complied to a .class file before running?
+    - This converts the .java file into bytecode which allows the JVM to execute it.
 
 
 
