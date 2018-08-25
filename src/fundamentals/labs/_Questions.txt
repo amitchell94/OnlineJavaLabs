@@ -34,7 +34,7 @@ Answer the following questions:
     - After making your changes you would add your files using the "git add <filename>" command.
       You  would then commit these changes using "git commit -m <comment>"
       You would then push these changes using "git push"
-      
+
 4.) What is the purpose of adding a remote to a local git repository?
     - This allows you to push changes from your local git repository to a remote repository elsewhere.
 
