@@ -8,4 +8,16 @@ package conditions_loops.labs;
  */
 
 public class Exercise_06 {
+    public static void main(String args[]){
+        int number = 1;
+        int result = 0;
+
+        while (number <= 100) {
+            result += number;
+
+            number ++;
+        }
+
+        System.out.println(result);
+    }
 }

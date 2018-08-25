@@ -2,32 +2,69 @@ Answer the following questions:
 
 
 1.) What are the names and uses of Java's eight primitive types?
+    -boolean
+    -byte
+    -char
+    -short
+    -int
+    -long
+    -float
+    -double
 
 2.) How do you declare and initialize an int variable called "x" with the value 42.
 
+    int x = 42;
+
 3.) What happens if you initialize a double variable with the value of a int?
+
+    The int will be cast into the double.
 
 4.) How do you set an int variable to the value of a double?
 
+    As this is a narrowing conversion, some data will be lost e.g. a double of 1.2 will become an int 1
+
 5.) What are the 5 arithmetic operators?
+
+    +,-,*,/,%
 
 6.) What are Relational operators used for? What is the result of using a relational operator?
 
+    Relational operators are used to compare two values.
+
 7.) Demonstrate the use of a Relational operator.
+
+    if (x > y) { xIsBigger = true; }
 
 8.) What logical operators used for? What is the result of using a logical operator?
 
+    Logical operators are used to perform boolean logic and return a boolean ouput.
+
 9.) Demonstrate the use of a logical operator.
+
+    boolean a = b || c;
 
 10.) How can you use the shorthand addition operator to add 10 to a variable "x"?
 
+    x += 10;
+
 11.) What data type is a String?
+
+    It is a sequence of connected chars
 
 12.) Are string mutable?
 
+    No
+
 13.) How do you concatenate Strings?
 
-14.) Can you cast and int to a String or a String to an int? Why or why not?
+    You can concatenate strings using the + operator.
+
+14.) Can you cast an int to a String or a String to an int? Why or why not?
+
+    You can cast an int to a String as a String can be used represent a number.
+
+    However, you only cast a String to an int if it contains only numerical values, as an int
+    cannot be used to store characters.
 
 15.) What is an array?
 
