@@ -1,5 +1,6 @@
 package objects_classes_methods.labs;
 
+import java.util.Scanner;
 /**
  * Objects, Classes and Methods Exercise 3:
  *
@@ -12,4 +13,64 @@ package objects_classes_methods.labs;
  *
  */
 
+class Program {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        Login login = new Login();
+
+        login.getUserNameAndPassword();
+
+        Program program = new Program();
+
+        if (program.correctLoginInfo(login.username, login.password)) {
+            System.out.println("Welcome " + login.username);
+            System.out.println("Would you like the nuclear launch code? (y/n)");
+            String response = scanner.next();
+
+            if (response.equalsIgnoreCase("y")) {
+                SecretServiceData secretServiceData = new SecretServiceData();
+
+                int nukeCode = secretServiceData.getNuclearLaunchCode();
+
+                System.out.println("The nuclear launch code is: " + nukeCode);
+            } else {
+                System.out.println("Goodbye");
+            }
+
+        } else {
+            System.out.println("Access Denied");
+        }
+
+
+    }
+
+    public boolean correctLoginInfo(String username, String password){
+        if (username.equals("admin" ) && password.equals("password") ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+class Login {
+    String username;
+    String password;
+    public void getUserNameAndPassword(){
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your username:");
+        username = scanner.next();
+        System.out.println("Please enter your password:");
+        password = scanner.next();
+    }
+}
+
+class SecretServiceData {
+    public int getNuclearLaunchCode() {
+        return 12345;
+    }
+}
 

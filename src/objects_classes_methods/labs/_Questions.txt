@@ -3,43 +3,125 @@ Answer the following questions:
 
 1.) What is an instance variable?
 
+    instance variables are the data members of a class.
+
 2.) How do you create an object of a class Vehicle?
+
+    Vehicle vehicle = new Vehicle();
 
 3.) What is a reference variable? How is it different from a primitive type?
 
+    A reference variable is a variable that can refer to an object.
+    They work differently from primitive types, when you assign a reference variable
+    to another reference variable, you change the object that the reference variable
+    refers to.
+
 4.) What does it mean to pass by reference?
+
+    When a method is called if the arguments passed into the method are reference
+    variables, these variables are passed by reference. Changes to these variables
+    will affect the original variables.
 
 5.) What makes up a method signature?
 
+    A method signature is made up of the method name and the number, type and order of its parameters.
+
 6.) Write a method signature for a method divide() that takes two ints as parameters and returns a double.
+
+    public static double divide(int x, int y) {
+        return (double) x / y;
+    }
 
 7.) When does a method stop executing? How can you make it terminate?
 
+    A method stops executing when it returns a value, or at the end of the code block.
+    You can end a method using the return keyword if it doesn't have a void return variable.
+
 8.) How do you return a String from a method?
+
+    return "a String";
+    or
+    String message = "message";
+    return message;
 
 9.) What is the return type of a method that does not returns any value?
 
+    void
+
 10.) When should a method be static?
+
+    When that method should be used independently of any objects.
 
 11.) What is an example of a time you would make an instance variable static? final?
 
+    When you want to count how many objects are created using a class, you can use a static
+    instance variable which increments after each new object is created.
+
 12.) When a method returns a value, what needs to be done with that value?
+
+    The value should be assigned to a variable.
 
 13.) What is method overloading?
 
+    Method overloading is where multiple methods of the same name are created and each either has
+    different parameter types, or a different number of parameters.
+
 14.) Demonstrate method overloading by writing the method signature of two overloaded methods.
+
+    multiply(x,y);
+    multiply(x,y,z);
 
 14.) What are constructors used for?
 
+    Constructors are called when an instance of an object is created. Constructors allow you
+    to provide initial values for class fields when an object is created.
+
 15.) If a class does not have a constructor, how does Java handle the creation of an object
+
+    If a class doesn't have a constructor, the default constructor will be used which will have no
+    parameters. When an object is created, any uninitialised fields will be set to their default values.
 
 16.) What does a constructor that takes in two variable, make and model, for a class Vehicle look like?
 
+    public Vehicle(String model, String make) {
+        this.model = model;
+        this.make = make;
+    }
+
 17.) What is the "this" keyword used for?
+
+    "this" is used inside a method or constructor of a class, it is used as a reference to the current object
+    whose method or constructor is being called.
 
 18.) What are the keywords public, private, protected used for in a class declaration? A method declaration? Variable declaration?
 
+    A class can only be public or default, public gives access to the class from all classes in any location,
+    default classes are only visible within their own package.
+    When used for members of a class (i.e. methods, variables), the public, private and protected keywords
+    control the access to members.
+    This is true for any members,
+        - 'public' allows any class in any location access to that member
+        - 'private' means only other members of the same class have access.
+        - 'protected' means only members of classes within the same package have access.
+
 19.) What is constructor overloading?
 
+    Constructor overloading is where the same constructor is declared with different parameters in the same class.
+
 20.) Demonstrate constructor overloading with three overloaded constructors.
+
+    public PrincessMovie(String princessName) {
+        this.princessName = princessName;
+    }
+
+    public PrincessMovie(String princessName, String bestSong) {
+        this.princessName = princessName;
+        this.bestSong = bestSong;
+    }
+
+    public PrincessMovie(String princessName, String bestSong, boolean findsTrueLove) {
+        this.princessName = princessName;
+        this.bestSong = bestSong;
+        this.findsTrueLove = findsTrueLove;
+    }
 

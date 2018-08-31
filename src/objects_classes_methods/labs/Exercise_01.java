@@ -16,4 +16,35 @@ package objects_classes_methods.labs;
  *      Cars, animals, poker games, sports teams, trees, beers, people and so on.
  */
 
+class AnimatedDisneyMovies {
+    public static void main(String[] args) {
 
+        PrincessMovie frozen = new PrincessMovie("Elsa","Let it Go",false);
+
+        NonPrincessMovie jungleBook = new NonPrincessMovie("Mogli", "Bear Necessities", false);
+    }
+}
+
+class PrincessMovie {
+    String princessName;
+    String bestSong;
+    boolean findsTrueLove;
+
+    public PrincessMovie(String princessName, String bestSong, boolean findsTrueLove) {
+        this.princessName = princessName;
+        this.bestSong = bestSong;
+        this.findsTrueLove = findsTrueLove;
+    }
+}
+
+class NonPrincessMovie {
+    String mainCharacterName;
+    String bestSong;
+    boolean hasLoveInterest;
+
+    public NonPrincessMovie(String mainCharacterName, String bestSong, boolean hasLoveInterest) {
+        this.mainCharacterName = mainCharacterName;
+        this.bestSong = bestSong;
+        this.hasLoveInterest = hasLoveInterest;
+    }
+}
