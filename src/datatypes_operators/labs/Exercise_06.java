@@ -20,5 +20,16 @@ public class Exercise_06 {
     public static void main(String[] args) {
 
         int[][] twoDArray = new int[5][5];
+
+        int threeMultiple = 0;
+
+        for (int i = 0; i < twoDArray.length;i++) {
+            for (int j = 0; j < twoDArray[i].length; j++) {
+                threeMultiple += 3;
+                twoDArray[i][j] = threeMultiple;
+                System.out.print(twoDArray[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
