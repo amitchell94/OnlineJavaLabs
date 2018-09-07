@@ -2,19 +2,42 @@ Answer the following questions:
 
 1.) What is inheritance?
 
+    When a class is created, it is possible to add a superclass using the extend keyword,
+    the class then inherits the members of that superclass.
+
 2.) Why do we use inheritance?
+
+    Inheritance allows code to be used in several places. It means that you only need to write
+    the unique features of a class while the rest of the common properties can be inherited from a
+    superclass.
 
 3.) Provide a real world example where you think inheritance would be implemented.
 
+    If you were to create a class Animal which contained the variables and methods that all animal objects require.
+    If you were then to make a subclass Cat which had the same variables and methods as an animal, by using
+    inheritance all these members can be included in the Cat class when it is declared.
+
 4.) How does a class inherit another class?
+
+    A class inherits another class using the 'extends' keyword.
 
 5.) How many levels can a hierarchy extend?
 
+    Up to the maximum value of an Integer.
+
 6.) What is the "super" keyword used for?
+
+    The super keyword is a reference variable to refer to the parent class object.
 
 7.) When a subclass object is created, in what order do the constructors execute?
 
+    The constuctor of the super class is executed first.
+
 8.) What is method overwriting?
+
+    If a subclass has the same method as the parent class, this is method overwriting.
 
 9.) How can method overwriting be beneficial?
 
+    Method overwriting can be beneficial as it allows a subclass to provide a
+    specific implementation of a method provided from a superclass.

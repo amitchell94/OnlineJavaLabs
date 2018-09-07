@@ -24,3 +24,116 @@ package inheritance.labs;
  *
  */
 
+class FurnitureTester {
+    public static void main(String[] args) {
+        RockingChair oldRockingChair = new RockingChair(20);
+        if (oldRockingChair.getAge() > 1) {
+            oldRockingChair.expireWarranty("Old Rocking Chair");
+        }
+
+    }
+}
+
+class Furniture {
+    private String material;
+    private boolean hasStorage;
+    private int age;
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public boolean isHasStorage() {
+        return hasStorage;
+    }
+
+    public void setHasStorage(boolean hasStorage) {
+        this.hasStorage = hasStorage;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void expireWarranty(String item){
+        System.out.println("The warranty for " + item + " has expired.");
+    }
+
+    public void expireWarranty() {
+        System.out.println("The warranty for an item has expired.");
+    }
+}
+
+class Chair extends Furniture {
+    private boolean hasWheels;
+    private boolean canRecline;
+
+    Chair(){
+        super.setHasStorage(false);
+    }
+
+    public Chair(boolean hasWheels) {
+        this.hasWheels = hasWheels;
+        super.setHasStorage(false);
+    }
+
+    public Chair(boolean hasWheels, boolean canRecline) {
+        this.hasWheels = hasWheels;
+        this.canRecline = canRecline;
+        super.setHasStorage(false);
+    }
+
+    public boolean isHasWheels() {
+        return hasWheels;
+    }
+
+    public void setHasWheels(boolean hasWheels) {
+        this.hasWheels = hasWheels;
+    }
+
+    public boolean isCanRecline() {
+        return canRecline;
+    }
+
+    public void setCanRecline(boolean canRecline) {
+        this.canRecline = canRecline;
+    }
+}
+
+class RockingChair extends Chair {
+    private String color;
+    private int maxRockingAngle;
+
+    RockingChair(int age){
+        setMaterial("Wood");
+        setCanRecline(true);
+        setHasWheels(false);
+        setAge(age);
+
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getMaxRockingAngle() {
+        return maxRockingAngle;
+    }
+
+    public void setMaxRockingAngle(int maxRockingAngle) {
+        this.maxRockingAngle = maxRockingAngle;
+    }
+
+}
