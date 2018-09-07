@@ -2,13 +2,28 @@ Answer the following questions:
 
 1.) What is a package?
 
+    A package is a group of related interfaces, classes, enumerations and annotations. They are used
+    to organise related classes together and to determine access to parts of code.
+
 2.) How to you import a package?
+
+    You can import a package using the import statement e.g. import package1.Class;
 
 3.) What structure do packages mimic?
 
+    Packages mimic a hierarchy.
+
 4.) How do do you compile a .java file in a package "solo_package" from the command line?
+
+    javac solo_package/Example.java;
 
 5.) What if the above package is in a package "parent_package". Where do you need to be to
     compile a .java file in "solo_package" from the command line?
 
+    Your working directory needs to be either parent_package or any levels above.
+
 6.) What extra layer do packages add to access control?
+
+    Packages offer several access combinations as along with individual classes, packages themselves
+    can be set to private, protected, defaut or public access.
+
