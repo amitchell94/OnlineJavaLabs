@@ -1,24 +1,51 @@
-Answer the following questions:
-
 1.) What is exception handling?
+
+    Exception handling is used to deal with errors that a program could encounter during its execution.
 
 2.) What is the exception hierarchy? What is the difference between the Exception class and the Error class?
 
+    Errors are unchecked exceptions and the developer is not required to do anything with them. Often a program cannot recover from Errors.
+    Exceptions are checked exceptions and a program can typically recover from these exceptions. A develop can check and deal with exceptions
+    using the try/catch block.
+
 3.) What is a try/catch?
+
+    A try/catch block uses the try and catch statements to attempt to run a block of code which is contained in the try code block.
+    If an exception occurs and there is a catch statement that is setup to catch that exception, then the code with the catch code block will be executed and the program will continue.
 
 4.) What exceptions have you come across thus far?
 
+    I have come across the ArrayIndexOutOfBounds exception a few times.
+
 5.) How many catch statement can you have following a try?
+
+    There is no limit to the amount of catch statements you can have following a try.
 
 6.) How many try statements can you have preceding a catch?
 
+    One.
+
 7.) What does the finally statement do in a try/catch/finally block?
 
+    The finally statement is added at the end of a try/catch/finally block.
+    Any code inside the finally statement code block will be executed regardless of the outcome of a try or catch statement.
+
 8.) Can you nest exceptions? If so, when would you nest an exception?
+
+    Yes, you can. By nesting a try-catch block within a catch block you can try and deal with the catching of a general exception more gracefully,
+    however if this try catch block cannot deal with it, then the external catch block will still handle the exception
 
 9.) If you want to catch an ArrayIndexOutOfBounds exception and an Exception exception,
     which should you catch first? Why?
 
+    You should catch the ArrayIndexOutOfBounds exception first, as this is a specific exception whereas
+    the Exception exception will catch all possible exceptions.
+
 10.) How do you rethrow and exception? Why would you rethrow an exception?
 
+    If an exception occurs within a method, the exception can be thrown up to the method that called that method. This can then be rethrown to the method that called that method.
+    You rethrow an exception in order to let the caller of the original method that caused the calling of a method with an exception know that there is a problem.
+
 11.) What is the purpose of the throws keyword?
+
+    The throws keyword is used in the declaration of a class to show that this class may thro
