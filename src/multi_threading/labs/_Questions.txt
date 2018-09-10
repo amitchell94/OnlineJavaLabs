@@ -2,10 +2,45 @@ Answer the following questions:
 
 1.) What is a thread and why do we use them?
 
+    When code is excecuted in Java it is done on a thread.
+    By using threads, we can run multiple code blocks at the same time.
+
 2.) What are the two ways to create a thread?
+
+    You can implement the Runnable interface or extend the Thread class.
 
 3.) How do you start a thread using the Runnable interface?
 
+    class Class1 implements Runnable {
+        Thread thread;
+
+        Class1 (String name) {
+            thread = new Thread(this, name);
+
+            thread.start();
+        }
+
+        public void run() {
+            //Code goes here
+        }
+    }
+
 4.) How do you start a thread using the Thread class?
 
+    class Class1 extends Thread {
+        Class1(String name) {
+            super(name);
+
+            start();
+        }
+
+        public void run() {
+            //Code goes here
+        }
+    }
+
 5.) How do you change a thread priority?
+
+    Using the setPriority method like so:
+
+        thread1.setPriority(1);

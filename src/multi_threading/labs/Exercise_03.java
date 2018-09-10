@@ -5,3 +5,4 @@ package multi_threading.labs;
  *
  *      In one of the previous exercises, demonstrate changing the priority of a thread
  */
+
