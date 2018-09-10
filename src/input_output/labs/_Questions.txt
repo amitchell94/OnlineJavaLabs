@@ -2,18 +2,40 @@ Answer the following questions:
 
 1.) What is a byte stream?
 
+    Byte streams are what programs use to perform input and output of 8-bit bytes.
+
 2.) What is a character stream?
+
+    Character stream I/O translates Javas internal character storing format to and from the local character set.
 
 3.) What two classes are at the top of the the byte stream hierarchy?
 
+    InputStream and OutputStream.
+
 4.) What two classes are at the top of the the character stream hierarchy?
+
+    Reader and Writer.
 
 5.) List at least three byte stream classes.
 
+    PipedInputStream, ObjectInputStream, FileInputStream.
+
 6.) List at least three character stream classes.
+
+    InputStreamReader, PipedReader, BufferedReader
 
 7.) What is a try-with-resources?
 
+    A try-with-resources statement is a try statement that also declares resources. It ensures that these resources
+    are closed at the end of the statement.
+
 8.) What makes the BufferedReader different from the BufferedInputStream?
 
+    The BufferedReader reads text from a character input stream and the BufferedInputStream
+    reads bytes from a byte stream
+
 9.) When would you use the read() method vs. the readline() method?
+
+    You would use the readline() method when using a BufferedReader as it will store all data in the linefeed.
+    The read() method would only give you one character, so you would use this when you wanted to write a program
+    that deals with individual characters.
