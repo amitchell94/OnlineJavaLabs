@@ -2,10 +2,23 @@ Answer the following questions:
 
 1.) Why do we use generics?
 
+    Generics make a program more flexible, it allows you to be generic about types when defining a class,
+    which users can then be specific of which type they want to use when they create the object.
+
 2.) What is type erasure?
+
+    Type erasure is where all generic type parameters are replaced at compile time by Java.
 
 3.) What is an example of a generic class that we have seen in the past?
 
+    ArrayList is a generic class we have used in the past, ArrayLists can accept several different
+    be lists of several different datatypes.
+
 4.) Can an interface be generic?
 
+    Yes, an interface can be generic.
+
 5.) What are bound and unbound generic types?
+
+    Bounded generic types are type parameters that are restricted to certain range of data types.
+    Unbounded generic types are type parameters where the data type is unrestricted.
